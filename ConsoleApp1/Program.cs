@@ -7,16 +7,18 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine("Hello!");
-            var s = Console.ReadLine();
-            string[] commands = new string[3] { "Command1", "Command2", "Command3" };
+            var start = Console.ReadLine();
 
-            if (s == "Hello")
+            string[] commands = new string[3] { "Command1", "Command2", "Command3" };
+            string sabrina = "Sabrina";
+
+            if (start == "Hello")
             {
                 Console.WriteLine("What is your name?");
                 var name = Console.ReadLine();
-                if (name == "Sabrina")
+                if (name == sabrina)
                 {
-                    Console.WriteLine("Heey Sabrina! My owner is called Sabrina.");
+                    Console.WriteLine("Heey Sabrina! My owner is called " ,sabrina, ".");
                 }
                 else
                 {
